@@ -1,0 +1,720 @@
+*{
+    /* background-color: black; */
+    margin: 0;
+    padding: 0;
+    
+}
+/* Bangladesh Flag */
+.bng{
+    width: 600px;
+    height: 350px;
+    background-color: green;
+    position: relative;
+    margin: 100px auto;
+
+}
+
+.circle{
+    width: 130px;
+    height: 130px;
+    background-color: red;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+hr{
+    
+    border: 1px solid black;
+}
+
+.Bangladesh h1{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+
+/* Afganistan Flag*/
+.afg{
+    width: 600px;
+    height: 350px;
+    background-color: black;
+    position: relative;
+    margin: 100px auto;
+    overflow: hidden;
+}
+
+.afg-red{
+    width: 200px; ;
+    height: 0;
+    
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+    
+}
+
+.afg:hover .afg-red{
+    width: 200px;
+    height: 350px;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    
+}
+
+
+
+
+.afg-green{
+    width: 200px;
+    height: 350px;
+    position: absolute;
+    background-color: green;
+    right: 0px;
+}
+
+
+
+
+
+.afg-img{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.afg::after{
+    
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    right: 0;
+    transition: .4s;
+
+}
+.afg::before{
+    
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background-color: green;
+    top: 0;
+    left: 0;
+    transition: .4s;
+    z-index: 1;
+
+}
+.afg:hover::after{
+    right: -300px;
+}
+
+.afg:hover::before{
+    left: -300px;
+}
+
+.Afganistan h1{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+/* Antigua and Barbuda */
+.ab{
+    width: 600px;
+    height: 350px;
+    background-color: black;
+    position: relative;
+    margin: 100px auto;
+    
+}
+
+
+
+.ab-blue{
+    width: 100%;
+    height: 70px;
+    background-color: #36A7E9;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.ab-white{
+    width: 100%;
+    height: 140px;
+    background-color: rgb(43, 105, 73);
+    position: absolute;
+    bottom: 0px;
+}
+
+.lf-red{
+    width: 0;
+    height: 0;
+    position: absolute;
+    background-color: red;
+    clip-path: polygon(0 100%,0 0,50% 100%);
+    bottom: 0;
+    left: 0;
+    transition: 0.4s;
+}
+
+
+.ab:hover .lf-red{
+    width: 100%;
+    height: 100%;
+}
+
+
+.rg-red{
+    width: 0;
+    height: 0;
+    position: absolute;
+    background-color: red;
+    clip-path: polygon(100% 0%,50% 100%,100% 100%);
+    bottom: 0;
+    right: 0;
+    transition: 0.4s;
+}
+
+.ab:hover .rg-red{
+    width: 100%;
+    height: 100%;
+}
+
+.star{
+    position: absolute;
+    left: 170px;
+    top: 13px;
+    visibility: hidden;
+    transition: 0.6s;
+    
+}
+
+.ab:hover .star{
+
+    visibility: visible;
+}
+
+.Antigua h1{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+/* Argentina Flag */
+
+.arg{
+    width: 600px;
+    height: 350px;
+    background-color:#8BD3F5 ;
+    position: relative;
+    margin: 100px auto;
+    overflow: hidden;
+}
+.arg-white{
+
+    width: 100%;
+    height: 33%;
+    background-color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.arg::before{
+    content: "";
+    width: 100%;
+    height: 33.5%;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.arg:hover::before{
+    left: -100%;
+}
+.arg::after{
+    content: "";
+    width: 100%;
+    height: 33.5%;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    bottom: 0;
+    transition: .4s;
+}
+
+.arg:hover::after{
+    right: -100%;
+}
+
+.arg-img{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.Argentina h1{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+/* Bahamas Flag */
+
+.bahamas{
+    width: 600px;
+    height: 350px;
+    background-color:#01AEF0;
+    position: relative;
+    margin: 100px auto;
+}
+
+.bm-yellow{
+    width: 100%;
+    height: 33%;
+    background-color:#FEF200;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.bm-black{
+    position: absolute;
+    width: 0;
+    height: 100%; 
+    background-color: black;
+    /* clip-path: polygon(0 0,40% 50%, 0 100%); */
+    z-index: 1;
+    transition: .4s;
+    left: 0;
+}
+.bahamas:hover .bm-black{
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0,40% 50%, 0 100%);
+    
+}
+
+.bahamas::before{
+    content: "";
+    width: 100%;
+    height: 33.5%;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.bahamas:hover::before{
+    left: -100%;
+}
+
+
+.bahamas::after{
+    content: "";
+    width: 100%;
+    height: 33.5%;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    transition: .4s;
+}
+
+.bahamas:hover::after{
+    left: -100%;
+}
+
+.Bahamas h1{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+
+
+/* Bahrain Flag */
+
+.bahrain{
+    width: 600px;
+    height: 350px;
+    background-color: red;
+    margin: 100px auto;
+    position: relative;
+    transition: .4s;
+    overflow: hidden;
+}
+
+.bahrain::before{
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 350px;
+    background-color: white;
+    left: 0;
+    transition: .4s;
+    border-radius: 20%;
+    
+}
+
+.bahrain:hover::before{
+    left: -100%;
+}
+
+.b-white{
+    width: 150px;
+    height: 100%;
+    background-color: rgb(245, 239, 239);
+    position: absolute;
+    clip-path: polygon(0 100%,0 0,85% 0,100% 5%,85% 10%,100% 15%,85% 20%,100% 25%,85% 30%,100% 35%,85% 40%,100% 45%,85% 50%,100% 55%,85% 60%,100% 65%,85% 70%,100% 75%,85% 80%,100% 85%,85% 90%,100% 95%,85% 100%);
+}
+
+.Bahrain h1{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+
+/* Benin Flag*/
+
+.benin{
+    width: 600px;
+    height: 350px;
+    background-color:white ;
+    position: relative;
+    margin: 100px auto;
+}
+
+.benin-green{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: -20px;
+    background-color: #00A651;
+    transition: .4s;
+
+}
+
+.benin:hover .benin-green{
+    left: 0;
+
+}
+
+.benin-yellow{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color:#FFF200 ;
+    right: -20px;
+    top: -20px;
+    transition: .4s;
+
+}
+.benin:hover .benin-yellow{
+    right: 0;
+    top: 0;
+}
+
+.benin-red{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color:#ED1C24;
+    right: -20px;
+    bottom:-20px;
+    transition: .4s;
+
+}
+
+.benin:hover .benin-red{
+    right: 0;
+    bottom: 0;
+}
+
+.Benin h1{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+
+/* Greece fla */
+.greece{
+    width: 600px;
+    height: 350px;
+    background-color:#7BAFDE ;
+    position: relative;
+    margin: 100px auto;
+ 
+}
+
+
+.greece-white1 {
+    width: 0;
+    height: 11%;
+    /* background-color: white; */
+    position: absolute;
+    top: 11%;
+    transition: 0.4s;
+}
+
+.greece:hover .greece-white1 {
+    width: 100%;
+    height: 11%;
+    background-color: white;
+    position: absolute;
+    top: 11%;
+}
+
+
+
+.greece-white2{
+    width: 0;
+    height: 11%;
+    background-color: white;
+    position: absolute;
+    top: 33%;
+    transition: 0.4s;
+}
+
+.greece:hover .greece-white2{
+    width: 100%;
+}
+
+.greece-white3{
+    width: 0;
+    height: 11%;
+    background-color: white;
+    position: absolute;
+    top: 55%;
+    transition: 0.4s;
+}
+
+.greece:hover .greece-white3{
+    width: 100%;
+}
+
+.greece-white4{
+    width: 0;
+    height: 11%;
+    background-color: white;
+    position: absolute;
+    top: 77%;
+    transition: 0.4s;
+}
+
+.greece:hover .greece-white4{
+    width: 100%;
+}
+
+.greece-blue{
+    width: 40%;
+    height: 55%;
+    background-color:#7BAFDE ;
+    position: absolute;
+}
+
+.greece-white{
+    width: 0;
+    height: 55%;
+    background-color:#ffffff ;
+    position: absolute;
+    /* clip-path: polygon(0 40%, 40% 40%, 40% 0, 60% 0, 60% 40%, 100% 40%, 100% 60%, 60% 60%, 60% 100%, 40% 100%, 40% 60%, 0 60%); */
+    transition: 0.4s;
+    top: 0;
+}
+
+.greece:hover .greece-white{
+    width: 40%;
+    clip-path: polygon(0 40%, 40% 40%, 40% 0, 60% 0, 60% 40%, 100% 40%, 100% 60%, 60% 60%, 60% 100%, 40% 100%, 40% 60%, 0 60%);
+
+}
+
+.Greece h1{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+/* Georgia Flag */
+
+.georgia{
+    width: 600px;
+    height: 350px;
+    background-color: rgb(247, 242, 237);
+    margin: 100px auto;
+    position: relative;
+
+}
+
+.geo-red{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:rgb(247, 242, 237);
+    clip-path: polygon(0 40%, 45% 40%, 45% 0, 55% 0, 55% 40%, 100% 40%, 100% 60%, 55% 60%, 55% 100%, 45% 100%, 45% 60%, 0 60%);
+    transition: 0.9s;
+}
+
+.georgia:hover .geo-red{
+    background-color: #ED1C24;
+}
+
+.star-red{
+    width: 0;
+    height: 0;
+    background-color: #ED1C24;
+    position: absolute;
+    clip-path: polygon(30% 38%, 45% 40%, 40% 26%, 60% 25%, 55% 40%, 70% 38%, 70% 53%, 55% 50%, 60% 65%, 40% 65%, 45% 50%, 30% 53%);
+    transition: 0.4s;
+}
+
+.georgia:hover .star-red{
+    width: 40%;
+    height: 45%;
+}
+
+.star-red1{
+    width: 0;
+    height: 0;
+    background-color: #ED1C24;
+    position: absolute;
+    right: 0;
+    clip-path: polygon(30% 38%, 45% 40%, 40% 26%, 60% 25%, 55% 40%, 70% 38%, 70% 53%, 55% 50%, 60% 65%, 40% 65%, 45% 50%, 30% 53%);
+    transition: 0.4s;
+}
+
+.georgia:hover .star-red1{
+    width: 40%;
+    height: 45%;
+}
+
+.star-red2{
+    width: 0;
+    height: 0;
+    background-color: #ED1C24;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    clip-path: polygon(30% 38%, 45% 40%, 40% 26%, 60% 25%, 55% 40%, 70% 38%, 70% 53%, 55% 50%, 60% 65%, 40% 65%, 45% 50%, 30% 53%);
+    transition: 0.4s;
+}
+
+.georgia:hover .star-red2{
+    width: 40%;
+    height: 45%;
+}
+
+.star-red3{
+    width: 0;
+    height: 0;
+    background-color: #ED1C24;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    clip-path: polygon(30% 38%, 45% 40%, 40% 26%, 60% 25%, 55% 40%, 70% 38%, 70% 53%, 55% 50%, 60% 65%, 40% 65%, 45% 50%, 30% 53%);
+    transition: 0.4s;
+}
+
+.georgia:hover .star-red3{
+    width: 40%;
+    height: 45%;
+}
+
+.Georgia h1{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.Brazil h1{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+/* Brazil National Flag */
+
+.brazil{
+    width: 600px;
+    height: 350px;
+    position: relative;
+    background-color: #00A651;
+    margin: 100px auto;
+
+}
+
+.bra-yellow{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #00A651;
+    clip-path: polygon(50% 15%, 85% 50%, 50% 85%, 15% 50%);
+    transition: .8s;
+}
+
+.brazil:hover .bra-yellow{
+
+    background-color:#F7DF4A;
+}
+
+.bra-blue{
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #15A7BE;
+    transition: 0.4s;
+}
+
+.brazil:hover .bra-blue{
+    width: 120px;
+    height: 120px;
+}
+
+.bra-img{
+        width: 0;
+        height: 0;
+        
+        border-radius: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        transition: .4s;
+    
+}
+
+.brazil:hover .bra-img{
+    width: 130px;
+    height: 130px;
+}
+
+.Brazil h1{
+    text-align: center;
+    padding: 10px;
+    
+}
